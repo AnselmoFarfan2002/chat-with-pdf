@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import App from "../components/App.svelte";
+---
+
+<Layout title="Chat with your PDF">
+  <main
+    class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] text-slate-100 flex flex-col gap-10"
+  >
+    <div class="w-full text-center">
+      <h1 class="font-extrabold text-5xl">Chat with your PDF</h1>
+    </div>
+    <div>
+      <App />
+    </div>
+  </main>
+</Layout>
+
+<style></style>
