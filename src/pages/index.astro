@@ -1,6 +1,7 @@
 ---
+import AppRoot from "../components/root";
 import Layout from "../layouts/Layout.astro";
-import App from "../components/App.svelte";
+import "../styles.css";
 ---
 
 <Layout title="Chat with your PDF">
@@ -10,9 +11,7 @@ import App from "../components/App.svelte";
     <div class="w-full text-center">
       <h1 class="font-extrabold text-5xl">Chat with your PDF</h1>
     </div>
-    <div>
-      <App />
-    </div>
+    <AppRoot client:load />
   </main>
 </Layout>
 

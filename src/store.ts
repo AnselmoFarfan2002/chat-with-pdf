@@ -1,10 +1,6 @@
-import { writable } from "svelte/store";
+import { configureStore } from "@reduxjs/toolkit";
+import appStateReducer from "./reducer/app-state-reducer";
 
-export const APP_STATUS = {
-  INIT: 0,
-  LOADING: 1,
-  CHAT_MODE: 2,
-  ERROR: -1,
-};
+const store = configureStore({ reducer: appStateReducer });
 
-export const appStatus = writable(APP_STATUS.INIT);
+export default store;
